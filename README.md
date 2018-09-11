@@ -1,4 +1,4 @@
-# SonicCodingExercise
+# Sonic Java Programming Exercise
 
 This is a very simple coding example, no complicated algorithms.  Our intent is to collect an example of your design and code so that we can discuss your approach to fulfilling the requirements.  The purpose is to generate further discussion and explore your grasp of OO concepts and knowledge of the JDK.  Present your response as you see fit.
 
