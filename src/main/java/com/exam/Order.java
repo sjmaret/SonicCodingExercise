@@ -38,7 +38,6 @@ public final class Order implements Serializable {
         for (OrderItem item : items) {
             if (item.getItem().isTaxable()) {
                 itemCost = (item.getItem().getPrice() * item.getQuantity()) * taxRate;
-
             } else {
                 itemCost = item.getItem().getPrice() * item.getQuantity();
             }
