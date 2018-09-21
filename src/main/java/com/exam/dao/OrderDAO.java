@@ -5,6 +5,7 @@ import com.exam.model.OrderItem;
 
 public class OrderDAO {
 
+	//TODO: replace with call to database
 	OrderItem[] orderItems = new OrderItem[] {
 	        new OrderItem(new Item(5, "tile", 7.27f, true), 25),
 	        new OrderItem(new Item(7, "Plumbing", 250.00f, false), 1),
