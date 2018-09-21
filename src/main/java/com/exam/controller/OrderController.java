@@ -25,10 +25,10 @@ public class OrderController {
 	protected OrderController() {}
 
 	/*
-     * Calculate the average Score of a Tour.
+     * Calculate the order total with tax rate on material.
      *
-     * @param tourId
-     * @return Tuple of "average" and the average value.
+     * @param taxTate
+     * @return OrderTotal.
      */
 	@RequestMapping(method = RequestMethod.GET, path = "/total/{taxRate}")
     public OrderTotal getOrderTotal(@PathVariable(value = "taxRate") float taxRate) {
@@ -37,10 +37,8 @@ public class OrderController {
     }
 
     /**
-     * Calculate the average Score of a Tour.
-     *
-     * @param tourId
-     * @return Tuple of "average" and the average value.
+     * Get all of the order items.
+     * @return Collection<OrderItem>.
      */
     @RequestMapping(method = RequestMethod.GET, path = "/items")
     public Collection<OrderItem> getItems() {
